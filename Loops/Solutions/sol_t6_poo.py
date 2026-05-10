@@ -70,13 +70,83 @@ def main():
     print(factura.calcular_factura())
 """
 
+# ex 33
+"""
 class Empleado:
     def __init__(self, nombre, edad):
         self.nombre = nombre
         self.edad = edad
 
 class Programador(Empleado):
+    def __init__(self, nombre, edad, lenguaje):
+        Empleado.__init__(self, nombre, edad)
+        self.lenguaje = lenguaje
 
+    def mostrar_info(self):
+        print(self.nombre, self.edad)
+
+class Diseñador(Empleado):
+    def __init__(self, nombre, edad, programa):
+        Empleado.__init__(self, nombre, edad)
+        self.programa = programa
+
+    def mostrar_info(self):
+        print(self.nombre, self.edad)
+
+def main():
+    programador = Programador("cata", 20, "java")
+    diseñador = Diseñador("didac", 20, "adobe")
+
+    programador.mostrar_info()
+    diseñador.mostrar_info()
+"""
+
+# ex 34
+"""
+class Empleado:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def mostrar_info(self):
+        return f"{self.nombre}, {self.edad}"
+
+class Programador(Empleado):
+    def __init__(self, nombre, edad, lenguaje):
+        Empleado.__init__(self, nombre, edad)
+        self.lenguaje = lenguaje
+        
+    def mostrar_info(self):
+        print(f"Programador: {self.nombre} - {self.lenguaje}")
+
+class Diseñador(Empleado):
+    def __init__(self, nombre, edad, programa):
+        Empleado.__init__(self, nombre, edad)
+        self.programa = programa
+
+    def mostrar_info(self):
+        print(f"Diseñador: {self.nombre} - {self.programa}")
+
+def main():
+    empleados = []
+
+    programador = Programador("cata", 20, "java")
+    programador2 = Programador("anabel", 20, "java")
+    programador3 = Programador("ivan", 20, "java")
+    disenyador = Diseñador("didac", 20, "adobe")
+    disenyador2 = Diseñador("pau", 20, "adobe")
+    disenyador3 = Diseñador("pol", 20, "adobe")
+
+    empleados.append(programador)
+    empleados.append(programador2)
+    empleados.append(programador3)
+    empleados.append(disenyador)
+    empleados.append(disenyador2)
+    empleados.append(disenyador3)
+
+    for i, empleado in enumerate(empleados, start=1):
+        print(empleado.mostrar_info())
+"""
 
 if __name__ == '__main__':
-    main()
+    pass
