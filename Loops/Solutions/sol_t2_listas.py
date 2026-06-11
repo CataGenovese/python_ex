@@ -24,3 +24,10 @@ for i in range(len_list):
         max = nums[i]
 print(max)
 
+#ex 13
+frase = input("Inserte frase: ")
+leng = len(frase)
+
+print("*" * (leng + 4))
+print("* " + frase + " *")
+print("*" * (leng + 4))

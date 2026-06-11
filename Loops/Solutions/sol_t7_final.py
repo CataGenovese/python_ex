@@ -1,4 +1,5 @@
 #ex 35
+"""
 class Biblioteca:
     def __init__(self, nombre):
         self.nombre = nombre
@@ -39,6 +40,14 @@ def main():
 
         for j, libro in enumerate(biblio.lista_libros, start=1):
             print(f"libro n {j}: {libro.titulo} ")
+"""
+class Pedidos:
+    def __init__(self, n_pedido):
+        self.n_pedido = n_pedido
+        self.lista_productos = []
+
+        
+
 
 if __name__ == "__main__":
     main()

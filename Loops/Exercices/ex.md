@@ -84,6 +84,13 @@ Suma todos los números de:
 ```python
 nums = [3, 5, 2, 8, 10]
 ```
+**Ejercicio 13.2**
+Dissenyar una funció que, donada una frase, la mostri per pantalla envoltada d’asteriscos.
+```python
+********
+* hola *
+********
+```
 
 **Ejercicio 14**
 Encuentra el número más grande sin usar la función `max()`.

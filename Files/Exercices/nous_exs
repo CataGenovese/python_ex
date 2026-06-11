@@ -1,0 +1,136 @@
+🟢 NIVEL 1 — Muy fáciles
+Ejercicio 1
+
+Crea un fichero llamado saludo.txt y escribe:
+
+Hola
+Me llamo Cata
+Ejercicio 2
+
+Lee el fichero saludo.txt y muestra todas las líneas.
+
+Ejercicio 3
+
+Cuenta cuántas líneas tiene un fichero.
+
+Ejercicio 4
+
+Pide una frase al usuario y añádela al fichero frases.txt.
+
+🟡 NIVEL 2 — Fáciles
+Ejercicio 5
+
+Lee un fichero y muestra solo las líneas que tengan más de 5 caracteres.
+
+Ejercicio 6
+
+Cuenta cuántas veces aparece la letra "a" en un fichero.
+
+Ejercicio 7
+
+Copia el contenido de origen.txt a copia.txt.
+
+Ejercicio 8
+
+Lee nombres de nombres.txt y crea un fichero individual para cada uno.
+
+Ejemplo:
+
+Ana
+Juan
+Marta
+
+Crear:
+
+Ana.txt
+Juan.txt
+Marta.txt
+🟠 NIVEL 3 — Intermedios
+Ejercicio 9
+
+Busca un DNI dentro de un fichero SIN leer todo el archivo.
+
+Formato:
+
+123A    20
+555B    18
+999C    40
+
+Pide un DNI y muestra la edad.
+
+👉 Este es EXACTAMENTE estilo examen.
+
+Ejercicio 10
+
+Haz una agenda:
+
+agenda = {
+    ("Cata", "Lopez"): ["666777888", 20]
+}
+
+Opciones:
+
+añadir
+borrar
+mostrar
+salir
+Ejercicio 11
+
+Guarda la agenda en un fichero:
+
+Cata,Lopez:666777888,20
+Ejercicio 12
+
+Recupera la agenda desde el fichero.
+
+👉 MUY importante porque mezcla:
+
+strings
+split
+diccionarios
+ficheros
+🔴 NIVEL 4 — CSV y JSON
+Ejercicio 13 — CSV
+
+Lee un CSV de productos:
+
+nombre,precio
+camiseta,20
+zapatos,50
+
+Muestra:
+
+camiseta cuesta 20€
+Ejercicio 14 — JSON
+
+Lee este JSON:
+
+[
+ {"temp":25,"vel":3000},
+ {"temp":28,"vel":3500}
+]
+
+Haz la media de temp.
+
+Ejercicio 15 — JSON → CSV
+
+Convierte un JSON a CSV.
+
+🔵 NIVEL 5 — Difíciles estilo examen
+Ejercicio 16
+
+Haz el menú completo:
+
+a - abrir json
+b - calcular media
+c - guardar csv
+d - salir
+Ejercicio 17
+
+Usa pickle para guardar una lista de objetos Alumno.
+
+Ejercicio 18
+
+Copia automáticamente todos los .txt de una carpeta a otra.
+
+👉 os.listdir() + shutil.copy()
